@@ -23,9 +23,7 @@ define :intro do
   sample :drum_cymbal_closed, amp: rrand(0.7, 1.2)
 end
 
-
 #intro #comment this after start
-
 
 live_loop :master, sync: :sync do
   set :tonation, (ring :Db, :C, :E, :G, :Gs,:B ,:F, :Ab, :A ).tick
@@ -111,13 +109,10 @@ with_fx :reverb, room: 1 do
     if rand < 0.3 * intense#one_in 3
       play sc - 12, amp: 0.3
       play chord_invert((chord sc, chordType), rrand_i(0,5)), release: rrand(0.3, 3), amp: rrand(0.3, 0.9) * 1.1
-      
     end
-    sleep 0.25
-    
+    sleep 0.25  
   end
 end
-
 
 with_fx :compressor do
   live_loop :solo, sync: :sync do
@@ -138,10 +133,3 @@ with_fx :compressor do
     
   end
 end
-
-
-
-
-
-
-
