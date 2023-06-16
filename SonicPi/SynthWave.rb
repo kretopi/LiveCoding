@@ -1,5 +1,5 @@
 # ***** Author: Piotr Goj ***
-# *****     Synth Wave    ***
+# *****     SynthWave    ***
 #
 
 live_loop :metro do #sync
