@@ -1,3 +1,8 @@
+# ***** Piotr Goj          ***
+# ***** 29.09.2023 session ***
+
+
+
 use_bpm 80
 
 live_loop :metro do
