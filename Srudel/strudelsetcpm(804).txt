@@ -1,0 +1,16 @@
+setcpm(80/4)
+let sc = "<A D C E>:minor".slow(8)
+
+
+$: s("[bd*4? <hh oh>]*2").bank("tr909").dec(.4)//.echo(2, 1/6, .1)
+
+$: n(rand.range(0, 8)).segment(8).struct("x? x? x? x? x? x? x? x?").scale(sc).sound("gm_rock_organ:2 gm_rock_organ:1 gm_rock_organ:3").transpose("[-24 | -12]").gain(1)
+ 
+
+$: n("<0@4>").scale(sc).sound("supersaw").transpose("[12 | 0]").lpf("<100 1000 200 300 >").fast(2).gain(1)
+
+$: n("<0 2 3 6 4? 3 3? 6> <0>?0.3").scale(sc).sound("supersaw").lpf("<300 1000 500 1000 700 1000>").fast(8).gain(0.6)
+
+$: n("<[0?, <3 4 8>, 7]>").scale(sc).sound("gm_music_box").fast(2).gain(.5)
+
+$: n("<[0 2? [3 | 7] 4]*2 [0 <2 3> 0 1]*4>").scale(sc).sound("sqr").fast(1).gain(.3)
